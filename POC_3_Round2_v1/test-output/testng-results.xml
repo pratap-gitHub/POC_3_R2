@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="2" ignored="0" total="9" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14797" started-at="2019-08-16T07:00:18Z" finished-at="2019-08-16T07:00:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14797" started-at="2019-08-16T07:00:18Z" finished-at="2019-08-16T07:00:32Z">
+      <class name="TESTING_TESTS.test1">
+        <test-method status="PASS" signature="launch_browser()[pri:0, instance:TESTING_TESTS.test1@50c87b21]" name="launch_browser" is-config="true" duration-ms="7249" started-at="2019-08-16T12:30:18Z" finished-at="2019-08-16T12:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="verify_title()[pri:0, instance:TESTING_TESTS.test1@50c87b21]" name="verify_title" duration-ms="174" started-at="2019-08-16T12:30:25Z" finished-at="2019-08-16T12:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_title -->
+        <test-method status="PASS" signature="go_to_search()[pri:0, instance:TESTING_TESTS.test1@50c87b21]" name="go_to_search" duration-ms="433" started-at="2019-08-16T12:30:25Z" depends-on-methods="TESTING_TESTS.test1.verify_title" finished-at="2019-08-16T12:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_to_search -->
+      </class> <!-- TESTING_TESTS.test1 -->
+      <class name="TESTING_TESTS.test2">
+        <test-method status="PASS" signature="launch_browser()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="launch_browser" is-config="true" duration-ms="6291" started-at="2019-08-16T12:30:26Z" finished-at="2019-08-16T12:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="get_data()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="get_data" is-config="true" duration-ms="4" started-at="2019-08-16T12:30:32Z" finished-at="2019-08-16T12:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_data -->
+        <test-method status="PASS" signature="verify_title()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="verify_title" duration-ms="84" started-at="2019-08-16T12:30:32Z" finished-at="2019-08-16T12:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_title -->
+        <test-method status="FAIL" signature="testSearchTitle()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="testSearchTitle" duration-ms="8" started-at="2019-08-16T12:30:32Z" depends-on-methods="TESTING_TESTS.test1.go_to_search" finished-at="2019-08-16T12:30:32Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Advanced Search] but found [Online Bookstore]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Advanced Search] but found [Online Bookstore]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at TESTING_TESTS.test2.testSearchTitle(test2.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTitle -->
+        <test-method status="PASS" signature="go_to_search()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="go_to_search" duration-ms="421" started-at="2019-08-16T12:30:32Z" depends-on-methods="TESTING_TESTS.test1.verify_title" finished-at="2019-08-16T12:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_to_search -->
+        <test-method status="FAIL" signature="enterCategoryDetails()[pri:1, instance:TESTING_TESTS.test2@5f375618]" name="enterCategoryDetails" duration-ms="123" started-at="2019-08-16T12:30:32Z" depends-on-methods="TESTING_TESTS.test1.go_to_search" finished-at="2019-08-16T12:30:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:113)
+	at BASE_CLASSES.SearchPage.search_books(SearchPage.java:61)
+	at TESTING_TESTS.test2.enterCategoryDetails(test2.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCategoryDetails -->
+        <test-method status="SKIP" signature="verify_books(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="verify_books" duration-ms="0" started-at="2019-08-16T12:30:32Z" data-provider="expected_book_names" depends-on-methods="TESTING_TESTS.test2.verify_number" finished-at="2019-08-16T12:30:32Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test2.verify_books(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test2.verify_books(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_books -->
+        <test-method status="SKIP" signature="verify_prices(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="verify_prices" duration-ms="0" started-at="2019-08-16T12:30:32Z" data-provider="expected_book_prices" depends-on-methods="TESTING_TESTS.test2.verify_number" finished-at="2019-08-16T12:30:32Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test2.verify_prices(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test2.verify_prices(java.lang.String)[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_prices -->
+        <test-method status="SKIP" signature="verify_number()[pri:0, instance:TESTING_TESTS.test2@5f375618]" name="verify_number" duration-ms="0" started-at="2019-08-16T12:30:32Z" depends-on-methods="TESTING_TESTS.test2.enterCategoryDetails" finished-at="2019-08-16T12:30:32Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test2.verify_number()[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test2.verify_number()[pri:0, instance:TESTING_TESTS.test2@5f375618] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_number -->
+      </class> <!-- TESTING_TESTS.test2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

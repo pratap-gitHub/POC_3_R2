@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TESTING_TESTS.test2">
+        <methods>
+          <include name="verify_number"/>
+          <include name="get_data"/>
+          <include name="verify_books"/>
+          <include name="go_to_search"/>
+          <include name="testSearchTitle"/>
+          <include name="enterCategoryDetails"/>
+          <include name="verify_prices"/>
+          <include name="launch_browser"/>
+          <include name="verify_title"/>
+        </methods>
+      </class> <!-- TESTING_TESTS.test2 -->
+      <class name="TESTING_TESTS.test1">
+        <methods>
+          <include name="go_to_search"/>
+          <include name="launch_browser"/>
+          <include name="verify_title"/>
+        </methods>
+      </class> <!-- TESTING_TESTS.test1 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
